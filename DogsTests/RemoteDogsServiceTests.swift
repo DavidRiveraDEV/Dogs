@@ -30,10 +30,12 @@ class RemoteDogsServiceTests: XCTestCase {
         
         self.sut.getDogs { dogs in
             XCTAssert(!dogs.isEmpty)
-            let dog = dogs[0]
-            XCTAssertEqual(dog.dogName, "Rex")
-            XCTAssertEqual(dog.age, 5)
-            XCTAssertEqual(dog.dogDescription, "He is much more passive and is the first to suggest to rescue and not eat The Little Pilot")
+            if (!dogs.isEmpty) {
+                let dog = dogs[0]
+                XCTAssertEqual(dog.dogName, "Rex")
+                XCTAssertEqual(dog.age, 5)
+                XCTAssertEqual(dog.dogDescription, "He is much more passive and is the first to suggest to rescue and not eat The Little Pilot")
+            }
             expectation.fulfill()
         } onFailed: { response in
             XCTAssert(false)

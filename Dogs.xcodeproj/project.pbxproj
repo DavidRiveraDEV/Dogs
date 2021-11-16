@@ -41,6 +41,8 @@
 		CD72993527444D1B0079A34D /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72993427444D1B0079A34D /* Dog.swift */; };
 		CD72993827444D790079A34D /* RemoteDogsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72993727444D790079A34D /* RemoteDogsService.swift */; };
 		CD72993A27444E350079A34D /* RemoteDogsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72993927444E350079A34D /* RemoteDogsServiceTests.swift */; };
+		CD72993C274450AD0079A34D /* LocalDogsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72993B274450AD0079A34D /* LocalDogsService.swift */; };
+		CD72993E274453830079A34D /* LocalDogsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72993D274453830079A34D /* LocalDogsServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,8 @@
 		CD72993427444D1B0079A34D /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		CD72993727444D790079A34D /* RemoteDogsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDogsService.swift; sourceTree = "<group>"; };
 		CD72993927444E350079A34D /* RemoteDogsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDogsServiceTests.swift; sourceTree = "<group>"; };
+		CD72993B274450AD0079A34D /* LocalDogsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDogsService.swift; sourceTree = "<group>"; };
+		CD72993D274453830079A34D /* LocalDogsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDogsServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,7 @@
 			children = (
 				CD72990F274446820079A34D /* HTTPClientTests.swift */,
 				CD72993927444E350079A34D /* RemoteDogsServiceTests.swift */,
+				CD72993D274453830079A34D /* LocalDogsServiceTests.swift */,
 			);
 			path = DogsTests;
 			sourceTree = "<group>";
@@ -292,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				CD72993727444D790079A34D /* RemoteDogsService.swift */,
+				CD72993B274450AD0079A34D /* LocalDogsService.swift */,
 			);
 			path = Dogs;
 			sourceTree = "<group>";
@@ -439,6 +445,7 @@
 				CD72992A274448A50079A34D /* String+Extensions.swift in Sources */,
 				CD7298FF2744452B0079A34D /* HTTPHeader.swift in Sources */,
 				CD729928274448A40079A34D /* Array+Extensions.swift in Sources */,
+				CD72993C274450AD0079A34D /* LocalDogsService.swift in Sources */,
 				CD72991D274447E30079A34D /* SuccessfulResponse.swift in Sources */,
 				CD7298FE2744452B0079A34D /* HTTPServiceProtocol.swift in Sources */,
 				CD72991A274447E30079A34D /* StatusCode.swift in Sources */,
@@ -467,6 +474,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD72993E274453830079A34D /* LocalDogsServiceTests.swift in Sources */,
 				CD72993A27444E350079A34D /* RemoteDogsServiceTests.swift in Sources */,
 				CD729910274446820079A34D /* HTTPClientTests.swift in Sources */,
 			);
