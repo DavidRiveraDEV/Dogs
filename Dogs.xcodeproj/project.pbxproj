@@ -44,6 +44,14 @@
 		CD72993C274450AD0079A34D /* LocalDogsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72993B274450AD0079A34D /* LocalDogsService.swift */; };
 		CD72993E274453830079A34D /* LocalDogsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72993D274453830079A34D /* LocalDogsServiceTests.swift */; };
 		CD729940274456470079A34D /* ImageCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72993F274456470079A34D /* ImageCacheService.swift */; };
+		CD72994927445A7D0079A34D /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72994227445A7D0079A34D /* HomePresenter.swift */; };
+		CD72994A27445A7D0079A34D /* HomeLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72994327445A7D0079A34D /* HomeLocalDataManager.swift */; };
+		CD72994B27445A7D0079A34D /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72994427445A7D0079A34D /* HomeRouter.swift */; };
+		CD72994C27445A7D0079A34D /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72994527445A7D0079A34D /* HomeProtocols.swift */; };
+		CD72994D27445A7D0079A34D /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72994627445A7D0079A34D /* HomeInteractor.swift */; };
+		CD72994E27445A7D0079A34D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72994727445A7D0079A34D /* HomeView.swift */; };
+		CD72994F27445A7D0079A34D /* HomeRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72994827445A7D0079A34D /* HomeRemoteDataManager.swift */; };
+		CD7299512744603C0079A34D /* HomeModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7299502744603C0079A34D /* HomeModuleTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +111,14 @@
 		CD72993B274450AD0079A34D /* LocalDogsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDogsService.swift; sourceTree = "<group>"; };
 		CD72993D274453830079A34D /* LocalDogsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDogsServiceTests.swift; sourceTree = "<group>"; };
 		CD72993F274456470079A34D /* ImageCacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheService.swift; sourceTree = "<group>"; };
+		CD72994227445A7D0079A34D /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		CD72994327445A7D0079A34D /* HomeLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLocalDataManager.swift; sourceTree = "<group>"; };
+		CD72994427445A7D0079A34D /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		CD72994527445A7D0079A34D /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		CD72994627445A7D0079A34D /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		CD72994727445A7D0079A34D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CD72994827445A7D0079A34D /* HomeRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRemoteDataManager.swift; sourceTree = "<group>"; };
+		CD7299502744603C0079A34D /* HomeModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,11 +171,11 @@
 		CD7298BE274434590079A34D /* Dogs */ = {
 			isa = PBXGroup;
 			children = (
+				CD7298EF274435EB0079A34D /* Module */,
+				CD7298F0274435F30079A34D /* Entity */,
 				CD7298F32744361C0079A34D /* Settings */,
 				CD7298F2274436120079A34D /* Common */,
 				CD7298F1274435FE0079A34D /* Service */,
-				CD7298F0274435F30079A34D /* Entity */,
-				CD7298EF274435EB0079A34D /* Module */,
 				CD7298BF274434590079A34D /* AppDelegate.swift */,
 				CD7298C1274434590079A34D /* SceneDelegate.swift */,
 				CD7298C5274434590079A34D /* Main.storyboard */,
@@ -176,6 +192,7 @@
 				CD72990F274446820079A34D /* HTTPClientTests.swift */,
 				CD72993927444E350079A34D /* RemoteDogsServiceTests.swift */,
 				CD72993D274453830079A34D /* LocalDogsServiceTests.swift */,
+				CD7299502744603C0079A34D /* HomeModuleTests.swift */,
 			);
 			path = DogsTests;
 			sourceTree = "<group>";
@@ -192,6 +209,7 @@
 		CD7298EF274435EB0079A34D /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				CD72994127445A5A0079A34D /* Home */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -303,6 +321,20 @@
 				CD72993F274456470079A34D /* ImageCacheService.swift */,
 			);
 			path = Dogs;
+			sourceTree = "<group>";
+		};
+		CD72994127445A5A0079A34D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CD72994527445A7D0079A34D /* HomeProtocols.swift */,
+				CD72994727445A7D0079A34D /* HomeView.swift */,
+				CD72994227445A7D0079A34D /* HomePresenter.swift */,
+				CD72994627445A7D0079A34D /* HomeInteractor.swift */,
+				CD72994427445A7D0079A34D /* HomeRouter.swift */,
+				CD72994327445A7D0079A34D /* HomeLocalDataManager.swift */,
+				CD72994827445A7D0079A34D /* HomeRemoteDataManager.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,22 +483,29 @@
 				CD72993C274450AD0079A34D /* LocalDogsService.swift in Sources */,
 				CD72991D274447E30079A34D /* SuccessfulResponse.swift in Sources */,
 				CD7298FE2744452B0079A34D /* HTTPServiceProtocol.swift in Sources */,
+				CD72994927445A7D0079A34D /* HomePresenter.swift in Sources */,
 				CD72991A274447E30079A34D /* StatusCode.swift in Sources */,
 				CD72990A274445440079A34D /* HTTPClientProtocol.swift in Sources */,
+				CD72994C27445A7D0079A34D /* HomeProtocols.swift in Sources */,
 				CD729926274448A40079A34D /* Data+Extensions.swift in Sources */,
 				CD7298FD2744452B0079A34D /* HTTPMethod.swift in Sources */,
 				CD72992C274448A50079A34D /* UIView+Extensions.swift in Sources */,
 				CD729915274447200079A34D /* LoggerProtocol.swift in Sources */,
 				CD72991C274447E30079A34D /* ResponseProtocol.swift in Sources */,
+				CD72994F27445A7D0079A34D /* HomeRemoteDataManager.swift in Sources */,
 				CD72993027444BE60079A34D /* StoredDog.swift in Sources */,
 				CD72993527444D1B0079A34D /* Dog.swift in Sources */,
 				CD72991B274447E30079A34D /* FailedResponse.swift in Sources */,
+				CD72994D27445A7D0079A34D /* HomeInteractor.swift in Sources */,
 				CD729940274456470079A34D /* ImageCacheService.swift in Sources */,
+				CD72994B27445A7D0079A34D /* HomeRouter.swift in Sources */,
 				CD729909274445440079A34D /* HTTPClient.swift in Sources */,
 				CD72990B274445440079A34D /* HTTPClientUtil.swift in Sources */,
 				CD729914274447200079A34D /* BasicLogger.swift in Sources */,
 				CD7298FC2744452B0079A34D /* AlamofireHTTPService.swift in Sources */,
 				CD729927274448A40079A34D /* LocalizabeViews+Extensions.swift in Sources */,
+				CD72994E27445A7D0079A34D /* HomeView.swift in Sources */,
+				CD72994A27445A7D0079A34D /* HomeLocalDataManager.swift in Sources */,
 				CD72993827444D790079A34D /* RemoteDogsService.swift in Sources */,
 				CD729929274448A40079A34D /* UIImage+Extensions.swift in Sources */,
 				CD7298C0274434590079A34D /* AppDelegate.swift in Sources */,
@@ -480,6 +519,7 @@
 			files = (
 				CD72993E274453830079A34D /* LocalDogsServiceTests.swift in Sources */,
 				CD72993A27444E350079A34D /* RemoteDogsServiceTests.swift in Sources */,
+				CD7299512744603C0079A34D /* HomeModuleTests.swift in Sources */,
 				CD729910274446820079A34D /* HTTPClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

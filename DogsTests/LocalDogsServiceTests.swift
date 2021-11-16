@@ -68,6 +68,5 @@ class LocalDogsServiceTests: XCTestCase {
         ]
         _ = self.sut.saveDogs(dogs)
     }
-    
 }
 
