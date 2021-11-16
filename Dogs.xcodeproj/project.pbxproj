@@ -43,6 +43,7 @@
 		CD72993A27444E350079A34D /* RemoteDogsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72993927444E350079A34D /* RemoteDogsServiceTests.swift */; };
 		CD72993C274450AD0079A34D /* LocalDogsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72993B274450AD0079A34D /* LocalDogsService.swift */; };
 		CD72993E274453830079A34D /* LocalDogsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72993D274453830079A34D /* LocalDogsServiceTests.swift */; };
+		CD729940274456470079A34D /* ImageCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72993F274456470079A34D /* ImageCacheService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		CD72993927444E350079A34D /* RemoteDogsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDogsServiceTests.swift; sourceTree = "<group>"; };
 		CD72993B274450AD0079A34D /* LocalDogsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDogsService.swift; sourceTree = "<group>"; };
 		CD72993D274453830079A34D /* LocalDogsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDogsServiceTests.swift; sourceTree = "<group>"; };
+		CD72993F274456470079A34D /* ImageCacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +300,7 @@
 			children = (
 				CD72993727444D790079A34D /* RemoteDogsService.swift */,
 				CD72993B274450AD0079A34D /* LocalDogsService.swift */,
+				CD72993F274456470079A34D /* ImageCacheService.swift */,
 			);
 			path = Dogs;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 				CD72993027444BE60079A34D /* StoredDog.swift in Sources */,
 				CD72993527444D1B0079A34D /* Dog.swift in Sources */,
 				CD72991B274447E30079A34D /* FailedResponse.swift in Sources */,
+				CD729940274456470079A34D /* ImageCacheService.swift in Sources */,
 				CD729909274445440079A34D /* HTTPClient.swift in Sources */,
 				CD72990B274445440079A34D /* HTTPClientUtil.swift in Sources */,
 				CD729914274447200079A34D /* BasicLogger.swift in Sources */,
