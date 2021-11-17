@@ -9,13 +9,52 @@
 /* Begin PBXBuildFile section */
 		CD7298C0274434590079A34D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7298BF274434590079A34D /* AppDelegate.swift */; };
 		CD7298C2274434590079A34D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7298C1274434590079A34D /* SceneDelegate.swift */; };
-		CD7298C4274434590079A34D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7298C3274434590079A34D /* ViewController.swift */; };
 		CD7298C7274434590079A34D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7298C5274434590079A34D /* Main.storyboard */; };
 		CD7298C92744345B0079A34D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD7298C82744345B0079A34D /* Assets.xcassets */; };
 		CD7298CC2744345B0079A34D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7298CA2744345B0079A34D /* LaunchScreen.storyboard */; };
-		CD7298D72744345B0079A34D /* DogsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7298D62744345B0079A34D /* DogsTests.swift */; };
 		CD7298E12744345B0079A34D /* DogsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7298E02744345B0079A34D /* DogsUITests.swift */; };
 		CD7298E32744345B0079A34D /* DogsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7298E22744345B0079A34D /* DogsUITestsLaunchTests.swift */; };
+		CD7298FC2744452B0079A34D /* AlamofireHTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7298F82744452B0079A34D /* AlamofireHTTPService.swift */; };
+		CD7298FD2744452B0079A34D /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7298F92744452B0079A34D /* HTTPMethod.swift */; };
+		CD7298FE2744452B0079A34D /* HTTPServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7298FA2744452B0079A34D /* HTTPServiceProtocol.swift */; };
+		CD7298FF2744452B0079A34D /* HTTPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7298FB2744452B0079A34D /* HTTPHeader.swift */; };
+		CD729909274445440079A34D /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD729906274445440079A34D /* HTTPClient.swift */; };
+		CD72990A274445440079A34D /* HTTPClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD729907274445440079A34D /* HTTPClientProtocol.swift */; };
+		CD72990B274445440079A34D /* HTTPClientUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD729908274445440079A34D /* HTTPClientUtil.swift */; };
+		CD72990E2744462D0079A34D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CD72990D2744462D0079A34D /* Alamofire */; };
+		CD729910274446820079A34D /* HTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72990F274446820079A34D /* HTTPClientTests.swift */; };
+		CD729914274447200079A34D /* BasicLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD729912274447200079A34D /* BasicLogger.swift */; };
+		CD729915274447200079A34D /* LoggerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD729913274447200079A34D /* LoggerProtocol.swift */; };
+		CD72991A274447E30079A34D /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD729916274447E30079A34D /* StatusCode.swift */; };
+		CD72991B274447E30079A34D /* FailedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD729917274447E30079A34D /* FailedResponse.swift */; };
+		CD72991C274447E30079A34D /* ResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD729918274447E30079A34D /* ResponseProtocol.swift */; };
+		CD72991D274447E30079A34D /* SuccessfulResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD729919274447E30079A34D /* SuccessfulResponse.swift */; };
+		CD729926274448A40079A34D /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72991F274448A40079A34D /* Data+Extensions.swift */; };
+		CD729927274448A40079A34D /* LocalizabeViews+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD729920274448A40079A34D /* LocalizabeViews+Extensions.swift */; };
+		CD729928274448A40079A34D /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD729921274448A40079A34D /* Array+Extensions.swift */; };
+		CD729929274448A40079A34D /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD729922274448A40079A34D /* UIImage+Extensions.swift */; };
+		CD72992A274448A50079A34D /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD729923274448A40079A34D /* String+Extensions.swift */; };
+		CD72992C274448A50079A34D /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD729925274448A40079A34D /* UIView+Extensions.swift */; };
+		CD72992E27444B3A0079A34D /* RemoteDataManagerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72992D27444B3A0079A34D /* RemoteDataManagerSettings.swift */; };
+		CD72993027444BE60079A34D /* StoredDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72992F27444BE60079A34D /* StoredDog.swift */; };
+		CD72993327444C4A0079A34D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CD72993227444C4A0079A34D /* RealmSwift */; };
+		CD72993527444D1B0079A34D /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72993427444D1B0079A34D /* Dog.swift */; };
+		CD72993827444D790079A34D /* RemoteDogsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72993727444D790079A34D /* RemoteDogsService.swift */; };
+		CD72993A27444E350079A34D /* RemoteDogsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72993927444E350079A34D /* RemoteDogsServiceTests.swift */; };
+		CD72993C274450AD0079A34D /* LocalDogsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72993B274450AD0079A34D /* LocalDogsService.swift */; };
+		CD72993E274453830079A34D /* LocalDogsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72993D274453830079A34D /* LocalDogsServiceTests.swift */; };
+		CD72994927445A7D0079A34D /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72994227445A7D0079A34D /* HomePresenter.swift */; };
+		CD72994A27445A7D0079A34D /* HomeLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72994327445A7D0079A34D /* HomeLocalDataManager.swift */; };
+		CD72994B27445A7D0079A34D /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72994427445A7D0079A34D /* HomeRouter.swift */; };
+		CD72994C27445A7D0079A34D /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72994527445A7D0079A34D /* HomeProtocols.swift */; };
+		CD72994D27445A7D0079A34D /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72994627445A7D0079A34D /* HomeInteractor.swift */; };
+		CD72994E27445A7D0079A34D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72994727445A7D0079A34D /* HomeView.swift */; };
+		CD72994F27445A7D0079A34D /* HomeRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72994827445A7D0079A34D /* HomeRemoteDataManager.swift */; };
+		CD7299512744603C0079A34D /* HomeModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7299502744603C0079A34D /* HomeModuleTests.swift */; };
+		CD729958274493430079A34D /* DogViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD729957274493430079A34D /* DogViewCell.swift */; };
+		CD72995B274496520079A34D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD72995D274496520079A34D /* Localizable.strings */; };
+		CD72995F274496CA0079A34D /* DogViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD72995E274496CA0079A34D /* DogViewCell.xib */; };
+		CD7299642744B1630079A34D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CD7299632744B1630079A34D /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,16 +78,52 @@
 		CD7298BC274434590079A34D /* Dogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7298BF274434590079A34D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD7298C1274434590079A34D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CD7298C3274434590079A34D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD7298C6274434590079A34D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD7298C82744345B0079A34D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD7298CB2744345B0079A34D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD7298CD2744345B0079A34D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD7298D22744345B0079A34D /* DogsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD7298D62744345B0079A34D /* DogsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsTests.swift; sourceTree = "<group>"; };
 		CD7298DC2744345B0079A34D /* DogsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7298E02744345B0079A34D /* DogsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsUITests.swift; sourceTree = "<group>"; };
 		CD7298E22744345B0079A34D /* DogsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CD7298F82744452B0079A34D /* AlamofireHTTPService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireHTTPService.swift; sourceTree = "<group>"; };
+		CD7298F92744452B0079A34D /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		CD7298FA2744452B0079A34D /* HTTPServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPServiceProtocol.swift; sourceTree = "<group>"; };
+		CD7298FB2744452B0079A34D /* HTTPHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHeader.swift; sourceTree = "<group>"; };
+		CD729906274445440079A34D /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		CD729907274445440079A34D /* HTTPClientProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClientProtocol.swift; sourceTree = "<group>"; };
+		CD729908274445440079A34D /* HTTPClientUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClientUtil.swift; sourceTree = "<group>"; };
+		CD72990F274446820079A34D /* HTTPClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClientTests.swift; sourceTree = "<group>"; };
+		CD729912274447200079A34D /* BasicLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicLogger.swift; sourceTree = "<group>"; };
+		CD729913274447200079A34D /* LoggerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerProtocol.swift; sourceTree = "<group>"; };
+		CD729916274447E30079A34D /* StatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusCode.swift; sourceTree = "<group>"; };
+		CD729917274447E30079A34D /* FailedResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FailedResponse.swift; sourceTree = "<group>"; };
+		CD729918274447E30079A34D /* ResponseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseProtocol.swift; sourceTree = "<group>"; };
+		CD729919274447E30079A34D /* SuccessfulResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessfulResponse.swift; sourceTree = "<group>"; };
+		CD72991F274448A40079A34D /* Data+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		CD729920274448A40079A34D /* LocalizabeViews+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LocalizabeViews+Extensions.swift"; sourceTree = "<group>"; };
+		CD729921274448A40079A34D /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		CD729922274448A40079A34D /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		CD729923274448A40079A34D /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		CD729925274448A40079A34D /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		CD72992D27444B3A0079A34D /* RemoteDataManagerSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataManagerSettings.swift; sourceTree = "<group>"; };
+		CD72992F27444BE60079A34D /* StoredDog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredDog.swift; sourceTree = "<group>"; };
+		CD72993427444D1B0079A34D /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		CD72993727444D790079A34D /* RemoteDogsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDogsService.swift; sourceTree = "<group>"; };
+		CD72993927444E350079A34D /* RemoteDogsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDogsServiceTests.swift; sourceTree = "<group>"; };
+		CD72993B274450AD0079A34D /* LocalDogsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDogsService.swift; sourceTree = "<group>"; };
+		CD72993D274453830079A34D /* LocalDogsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDogsServiceTests.swift; sourceTree = "<group>"; };
+		CD72994227445A7D0079A34D /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		CD72994327445A7D0079A34D /* HomeLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLocalDataManager.swift; sourceTree = "<group>"; };
+		CD72994427445A7D0079A34D /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		CD72994527445A7D0079A34D /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		CD72994627445A7D0079A34D /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		CD72994727445A7D0079A34D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CD72994827445A7D0079A34D /* HomeRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRemoteDataManager.swift; sourceTree = "<group>"; };
+		CD7299502744603C0079A34D /* HomeModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleTests.swift; sourceTree = "<group>"; };
+		CD729957274493430079A34D /* DogViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewCell.swift; sourceTree = "<group>"; };
+		CD72995C274496520079A34D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CD72995E274496CA0079A34D /* DogViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DogViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +131,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD7299642744B1630079A34D /* Kingfisher in Frameworks */,
+				CD72993327444C4A0079A34D /* RealmSwift in Frameworks */,
+				CD72990E2744462D0079A34D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,13 +177,18 @@
 		CD7298BE274434590079A34D /* Dogs */ = {
 			isa = PBXGroup;
 			children = (
+				CD7298EF274435EB0079A34D /* Module */,
+				CD7298F0274435F30079A34D /* Entity */,
+				CD7298F32744361C0079A34D /* Settings */,
+				CD7298F2274436120079A34D /* Common */,
+				CD7298F1274435FE0079A34D /* Service */,
 				CD7298BF274434590079A34D /* AppDelegate.swift */,
 				CD7298C1274434590079A34D /* SceneDelegate.swift */,
-				CD7298C3274434590079A34D /* ViewController.swift */,
 				CD7298C5274434590079A34D /* Main.storyboard */,
 				CD7298C82744345B0079A34D /* Assets.xcassets */,
 				CD7298CA2744345B0079A34D /* LaunchScreen.storyboard */,
 				CD7298CD2744345B0079A34D /* Info.plist */,
+				CD72995D274496520079A34D /* Localizable.strings */,
 			);
 			path = Dogs;
 			sourceTree = "<group>";
@@ -113,7 +196,10 @@
 		CD7298D52744345B0079A34D /* DogsTests */ = {
 			isa = PBXGroup;
 			children = (
-				CD7298D62744345B0079A34D /* DogsTests.swift */,
+				CD72990F274446820079A34D /* HTTPClientTests.swift */,
+				CD72993927444E350079A34D /* RemoteDogsServiceTests.swift */,
+				CD72993D274453830079A34D /* LocalDogsServiceTests.swift */,
+				CD7299502744603C0079A34D /* HomeModuleTests.swift */,
 			);
 			path = DogsTests;
 			sourceTree = "<group>";
@@ -125,6 +211,138 @@
 				CD7298E22744345B0079A34D /* DogsUITestsLaunchTests.swift */,
 			);
 			path = DogsUITests;
+			sourceTree = "<group>";
+		};
+		CD7298EF274435EB0079A34D /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				CD72994127445A5A0079A34D /* Home */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		CD7298F0274435F30079A34D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				CD72992F27444BE60079A34D /* StoredDog.swift */,
+				CD72993427444D1B0079A34D /* Dog.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		CD7298F1274435FE0079A34D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CD72993627444D5A0079A34D /* Dogs */,
+				CD7298F42744446C0079A34D /* HTTP */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CD7298F2274436120079A34D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CD72991E274448560079A34D /* Extensions */,
+				CD729911274446CB0079A34D /* Logger */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CD7298F32744361C0079A34D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CD72992D27444B3A0079A34D /* RemoteDataManagerSettings.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		CD7298F42744446C0079A34D /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				CD7298F5274444940079A34D /* HTTPClient */,
+				CD7298F6274444A40079A34D /* HTTPService */,
+				CD7298F7274444B30079A34D /* HTTPResponse */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		CD7298F5274444940079A34D /* HTTPClient */ = {
+			isa = PBXGroup;
+			children = (
+				CD729906274445440079A34D /* HTTPClient.swift */,
+				CD729907274445440079A34D /* HTTPClientProtocol.swift */,
+				CD729908274445440079A34D /* HTTPClientUtil.swift */,
+			);
+			path = HTTPClient;
+			sourceTree = "<group>";
+		};
+		CD7298F6274444A40079A34D /* HTTPService */ = {
+			isa = PBXGroup;
+			children = (
+				CD7298F82744452B0079A34D /* AlamofireHTTPService.swift */,
+				CD7298FB2744452B0079A34D /* HTTPHeader.swift */,
+				CD7298F92744452B0079A34D /* HTTPMethod.swift */,
+				CD7298FA2744452B0079A34D /* HTTPServiceProtocol.swift */,
+			);
+			path = HTTPService;
+			sourceTree = "<group>";
+		};
+		CD7298F7274444B30079A34D /* HTTPResponse */ = {
+			isa = PBXGroup;
+			children = (
+				CD729917274447E30079A34D /* FailedResponse.swift */,
+				CD729918274447E30079A34D /* ResponseProtocol.swift */,
+				CD729916274447E30079A34D /* StatusCode.swift */,
+				CD729919274447E30079A34D /* SuccessfulResponse.swift */,
+			);
+			path = HTTPResponse;
+			sourceTree = "<group>";
+		};
+		CD729911274446CB0079A34D /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				CD729912274447200079A34D /* BasicLogger.swift */,
+				CD729913274447200079A34D /* LoggerProtocol.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		CD72991E274448560079A34D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CD729921274448A40079A34D /* Array+Extensions.swift */,
+				CD72991F274448A40079A34D /* Data+Extensions.swift */,
+				CD729920274448A40079A34D /* LocalizabeViews+Extensions.swift */,
+				CD729923274448A40079A34D /* String+Extensions.swift */,
+				CD729922274448A40079A34D /* UIImage+Extensions.swift */,
+				CD729925274448A40079A34D /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CD72993627444D5A0079A34D /* Dogs */ = {
+			isa = PBXGroup;
+			children = (
+				CD72993727444D790079A34D /* RemoteDogsService.swift */,
+				CD72993B274450AD0079A34D /* LocalDogsService.swift */,
+			);
+			path = Dogs;
+			sourceTree = "<group>";
+		};
+		CD72994127445A5A0079A34D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CD72994527445A7D0079A34D /* HomeProtocols.swift */,
+				CD72994727445A7D0079A34D /* HomeView.swift */,
+				CD72994227445A7D0079A34D /* HomePresenter.swift */,
+				CD72994627445A7D0079A34D /* HomeInteractor.swift */,
+				CD72994427445A7D0079A34D /* HomeRouter.swift */,
+				CD72994327445A7D0079A34D /* HomeLocalDataManager.swift */,
+				CD72994827445A7D0079A34D /* HomeRemoteDataManager.swift */,
+				CD729957274493430079A34D /* DogViewCell.swift */,
+				CD72995E274496CA0079A34D /* DogViewCell.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +361,11 @@
 			dependencies = (
 			);
 			name = Dogs;
+			packageProductDependencies = (
+				CD72990D2744462D0079A34D /* Alamofire */,
+				CD72993227444C4A0079A34D /* RealmSwift */,
+				CD7299632744B1630079A34D /* Kingfisher */,
+			);
 			productName = Dogs;
 			productReference = CD7298BC274434590079A34D /* Dogs.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +438,11 @@
 				Base,
 			);
 			mainGroup = CD7298B3274434590079A34D;
+			packageReferences = (
+				CD72990C2744462D0079A34D /* XCRemoteSwiftPackageReference "Alamofire" */,
+				CD72993127444C4A0079A34D /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				CD7299622744B1630079A34D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = CD7298BD274434590079A34D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,7 +460,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD7298CC2744345B0079A34D /* LaunchScreen.storyboard in Resources */,
+				CD72995B274496520079A34D /* Localizable.strings in Resources */,
 				CD7298C92744345B0079A34D /* Assets.xcassets in Resources */,
+				CD72995F274496CA0079A34D /* DogViewCell.xib in Resources */,
 				CD7298C7274434590079A34D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,7 +488,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD7298C4274434590079A34D /* ViewController.swift in Sources */,
+				CD72992E27444B3A0079A34D /* RemoteDataManagerSettings.swift in Sources */,
+				CD72992A274448A50079A34D /* String+Extensions.swift in Sources */,
+				CD7298FF2744452B0079A34D /* HTTPHeader.swift in Sources */,
+				CD729928274448A40079A34D /* Array+Extensions.swift in Sources */,
+				CD72993C274450AD0079A34D /* LocalDogsService.swift in Sources */,
+				CD72991D274447E30079A34D /* SuccessfulResponse.swift in Sources */,
+				CD7298FE2744452B0079A34D /* HTTPServiceProtocol.swift in Sources */,
+				CD72994927445A7D0079A34D /* HomePresenter.swift in Sources */,
+				CD72991A274447E30079A34D /* StatusCode.swift in Sources */,
+				CD72990A274445440079A34D /* HTTPClientProtocol.swift in Sources */,
+				CD72994C27445A7D0079A34D /* HomeProtocols.swift in Sources */,
+				CD729926274448A40079A34D /* Data+Extensions.swift in Sources */,
+				CD7298FD2744452B0079A34D /* HTTPMethod.swift in Sources */,
+				CD72992C274448A50079A34D /* UIView+Extensions.swift in Sources */,
+				CD729915274447200079A34D /* LoggerProtocol.swift in Sources */,
+				CD72991C274447E30079A34D /* ResponseProtocol.swift in Sources */,
+				CD72994F27445A7D0079A34D /* HomeRemoteDataManager.swift in Sources */,
+				CD72993027444BE60079A34D /* StoredDog.swift in Sources */,
+				CD72993527444D1B0079A34D /* Dog.swift in Sources */,
+				CD72991B274447E30079A34D /* FailedResponse.swift in Sources */,
+				CD72994D27445A7D0079A34D /* HomeInteractor.swift in Sources */,
+				CD72994B27445A7D0079A34D /* HomeRouter.swift in Sources */,
+				CD729909274445440079A34D /* HTTPClient.swift in Sources */,
+				CD72990B274445440079A34D /* HTTPClientUtil.swift in Sources */,
+				CD729914274447200079A34D /* BasicLogger.swift in Sources */,
+				CD7298FC2744452B0079A34D /* AlamofireHTTPService.swift in Sources */,
+				CD729958274493430079A34D /* DogViewCell.swift in Sources */,
+				CD729927274448A40079A34D /* LocalizabeViews+Extensions.swift in Sources */,
+				CD72994E27445A7D0079A34D /* HomeView.swift in Sources */,
+				CD72994A27445A7D0079A34D /* HomeLocalDataManager.swift in Sources */,
+				CD72993827444D790079A34D /* RemoteDogsService.swift in Sources */,
+				CD729929274448A40079A34D /* UIImage+Extensions.swift in Sources */,
 				CD7298C0274434590079A34D /* AppDelegate.swift in Sources */,
 				CD7298C2274434590079A34D /* SceneDelegate.swift in Sources */,
 			);
@@ -268,7 +529,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD7298D72744345B0079A34D /* DogsTests.swift in Sources */,
+				CD72993E274453830079A34D /* LocalDogsServiceTests.swift in Sources */,
+				CD72993A27444E350079A34D /* RemoteDogsServiceTests.swift in Sources */,
+				CD7299512744603C0079A34D /* HomeModuleTests.swift in Sources */,
+				CD729910274446820079A34D /* HTTPClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +575,14 @@
 				CD7298CB2744345B0079A34D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CD72995D274496520079A34D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD72995C274496520079A34D /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -618,6 +890,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CD72990C2744462D0079A34D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		CD72993127444C4A0079A34D /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		CD7299622744B1630079A34D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CD72990D2744462D0079A34D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD72990C2744462D0079A34D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		CD72993227444C4A0079A34D /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD72993127444C4A0079A34D /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		CD7299632744B1630079A34D /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD7299622744B1630079A34D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CD7298B4274434590079A34D /* Project object */;
 }
