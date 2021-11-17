@@ -6,21 +6,19 @@
 //
 
 import UIKit
+import Kingfisher
 
-extension UIImageView {
+extension UIImage {
     
-    func load(url: URL, completion: ((_ image: UIImage?) -> Void)? = nil) {
-        DispatchQueue.global().async { [weak self] in
+    static func download(url: URL, id: String?, completion: ((_ image: UIImage?, _ id: String?) -> Void)? = nil) {
+        DispatchQueue.global().async {
             if let data = try? Data(contentsOf: url) {
                 if let image = UIImage(data: data) {
-                    DispatchQueue.main.async {
-                        self?.image = image
-                        completion?(image)
-                        return
-                    }
+                    completion?(image, id)
+                    return
                 }
             }
-            completion?(nil)
+            completion?(nil, id)
         }
     }
 }

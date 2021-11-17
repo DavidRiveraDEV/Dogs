@@ -30,6 +30,8 @@ class HomeModuleTests: XCTestCase {
         self.interactor.remoteDatamanager = self.remoteDataManager
         self.localDataManager.dataManagerRequestHandler = self.interactor
         self.remoteDataManager.dataManagerRequestHandler = self.interactor
+        
+        self.localDataManager.clearDogs()
     }
     
     override func tearDown() {
@@ -99,7 +101,10 @@ class HomePresenterLocallySuccessMock: HomePresenterProtocol, HomeInteractorOutp
         }
         expectation?.fulfill()
     }
+    
+    func onNetworkError() {}
 }
+
 
 class HomePresenterRemotelySuccessMock: HomePresenterProtocol, HomeInteractorOutputProtocol {
     
@@ -124,4 +129,6 @@ class HomePresenterRemotelySuccessMock: HomePresenterProtocol, HomeInteractorOut
         }
         expectation?.fulfill()
     }
+    
+    func onNetworkError() {}
 }

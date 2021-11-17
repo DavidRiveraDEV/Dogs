@@ -26,4 +26,8 @@ extension HomePresenter: HomeInteractorOutputProtocol {
     func updateDogs(_ dogs: [Dog]) {
         self.view?.updateDogs(dogs)
     }
+    
+    func onNetworkError() {
+        self.view?.showNetworkError()
+    }
 }

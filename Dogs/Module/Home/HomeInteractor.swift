@@ -42,7 +42,7 @@ extension HomeInteractor: HomeLocalDataManagerOutputProtocol, HomeRemoteDataMana
             self.loadingDogsLocally = false
             self.remoteDatamanager?.getDogs()
         } else {
-            self.presenter?.updateDogs([])
+            self.presenter?.onNetworkError()
         }
     }
 }

@@ -43,7 +43,6 @@
 		CD72993A27444E350079A34D /* RemoteDogsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72993927444E350079A34D /* RemoteDogsServiceTests.swift */; };
 		CD72993C274450AD0079A34D /* LocalDogsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72993B274450AD0079A34D /* LocalDogsService.swift */; };
 		CD72993E274453830079A34D /* LocalDogsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72993D274453830079A34D /* LocalDogsServiceTests.swift */; };
-		CD729940274456470079A34D /* ImageCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72993F274456470079A34D /* ImageCacheService.swift */; };
 		CD72994927445A7D0079A34D /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72994227445A7D0079A34D /* HomePresenter.swift */; };
 		CD72994A27445A7D0079A34D /* HomeLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72994327445A7D0079A34D /* HomeLocalDataManager.swift */; };
 		CD72994B27445A7D0079A34D /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72994427445A7D0079A34D /* HomeRouter.swift */; };
@@ -52,6 +51,10 @@
 		CD72994E27445A7D0079A34D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72994727445A7D0079A34D /* HomeView.swift */; };
 		CD72994F27445A7D0079A34D /* HomeRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72994827445A7D0079A34D /* HomeRemoteDataManager.swift */; };
 		CD7299512744603C0079A34D /* HomeModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7299502744603C0079A34D /* HomeModuleTests.swift */; };
+		CD729958274493430079A34D /* DogViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD729957274493430079A34D /* DogViewCell.swift */; };
+		CD72995B274496520079A34D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD72995D274496520079A34D /* Localizable.strings */; };
+		CD72995F274496CA0079A34D /* DogViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD72995E274496CA0079A34D /* DogViewCell.xib */; };
+		CD7299642744B1630079A34D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CD7299632744B1630079A34D /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,7 +113,6 @@
 		CD72993927444E350079A34D /* RemoteDogsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDogsServiceTests.swift; sourceTree = "<group>"; };
 		CD72993B274450AD0079A34D /* LocalDogsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDogsService.swift; sourceTree = "<group>"; };
 		CD72993D274453830079A34D /* LocalDogsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDogsServiceTests.swift; sourceTree = "<group>"; };
-		CD72993F274456470079A34D /* ImageCacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheService.swift; sourceTree = "<group>"; };
 		CD72994227445A7D0079A34D /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		CD72994327445A7D0079A34D /* HomeLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLocalDataManager.swift; sourceTree = "<group>"; };
 		CD72994427445A7D0079A34D /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
@@ -119,6 +121,9 @@
 		CD72994727445A7D0079A34D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CD72994827445A7D0079A34D /* HomeRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRemoteDataManager.swift; sourceTree = "<group>"; };
 		CD7299502744603C0079A34D /* HomeModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleTests.swift; sourceTree = "<group>"; };
+		CD729957274493430079A34D /* DogViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewCell.swift; sourceTree = "<group>"; };
+		CD72995C274496520079A34D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CD72995E274496CA0079A34D /* DogViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DogViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD7299642744B1630079A34D /* Kingfisher in Frameworks */,
 				CD72993327444C4A0079A34D /* RealmSwift in Frameworks */,
 				CD72990E2744462D0079A34D /* Alamofire in Frameworks */,
 			);
@@ -182,6 +188,7 @@
 				CD7298C82744345B0079A34D /* Assets.xcassets */,
 				CD7298CA2744345B0079A34D /* LaunchScreen.storyboard */,
 				CD7298CD2744345B0079A34D /* Info.plist */,
+				CD72995D274496520079A34D /* Localizable.strings */,
 			);
 			path = Dogs;
 			sourceTree = "<group>";
@@ -318,7 +325,6 @@
 			children = (
 				CD72993727444D790079A34D /* RemoteDogsService.swift */,
 				CD72993B274450AD0079A34D /* LocalDogsService.swift */,
-				CD72993F274456470079A34D /* ImageCacheService.swift */,
 			);
 			path = Dogs;
 			sourceTree = "<group>";
@@ -333,6 +339,8 @@
 				CD72994427445A7D0079A34D /* HomeRouter.swift */,
 				CD72994327445A7D0079A34D /* HomeLocalDataManager.swift */,
 				CD72994827445A7D0079A34D /* HomeRemoteDataManager.swift */,
+				CD729957274493430079A34D /* DogViewCell.swift */,
+				CD72995E274496CA0079A34D /* DogViewCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -356,6 +364,7 @@
 			packageProductDependencies = (
 				CD72990D2744462D0079A34D /* Alamofire */,
 				CD72993227444C4A0079A34D /* RealmSwift */,
+				CD7299632744B1630079A34D /* Kingfisher */,
 			);
 			productName = Dogs;
 			productReference = CD7298BC274434590079A34D /* Dogs.app */;
@@ -432,6 +441,7 @@
 			packageReferences = (
 				CD72990C2744462D0079A34D /* XCRemoteSwiftPackageReference "Alamofire" */,
 				CD72993127444C4A0079A34D /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				CD7299622744B1630079A34D /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = CD7298BD274434590079A34D /* Products */;
 			projectDirPath = "";
@@ -450,7 +460,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD7298CC2744345B0079A34D /* LaunchScreen.storyboard in Resources */,
+				CD72995B274496520079A34D /* Localizable.strings in Resources */,
 				CD7298C92744345B0079A34D /* Assets.xcassets in Resources */,
+				CD72995F274496CA0079A34D /* DogViewCell.xib in Resources */,
 				CD7298C7274434590079A34D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,12 +509,12 @@
 				CD72993527444D1B0079A34D /* Dog.swift in Sources */,
 				CD72991B274447E30079A34D /* FailedResponse.swift in Sources */,
 				CD72994D27445A7D0079A34D /* HomeInteractor.swift in Sources */,
-				CD729940274456470079A34D /* ImageCacheService.swift in Sources */,
 				CD72994B27445A7D0079A34D /* HomeRouter.swift in Sources */,
 				CD729909274445440079A34D /* HTTPClient.swift in Sources */,
 				CD72990B274445440079A34D /* HTTPClientUtil.swift in Sources */,
 				CD729914274447200079A34D /* BasicLogger.swift in Sources */,
 				CD7298FC2744452B0079A34D /* AlamofireHTTPService.swift in Sources */,
+				CD729958274493430079A34D /* DogViewCell.swift in Sources */,
 				CD729927274448A40079A34D /* LocalizabeViews+Extensions.swift in Sources */,
 				CD72994E27445A7D0079A34D /* HomeView.swift in Sources */,
 				CD72994A27445A7D0079A34D /* HomeLocalDataManager.swift in Sources */,
@@ -563,6 +575,14 @@
 				CD7298CB2744345B0079A34D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CD72995D274496520079A34D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD72995C274496520079A34D /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -888,6 +908,14 @@
 				kind = branch;
 			};
 		};
+		CD7299622744B1630079A34D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -900,6 +928,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CD72993127444C4A0079A34D /* XCRemoteSwiftPackageReference "realm-cocoa" */;
 			productName = RealmSwift;
+		};
+		CD7299632744B1630079A34D /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD7299622744B1630079A34D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -13,6 +13,7 @@ protocol HomeViewProtocol: AnyObject {
     var presenter: HomePresenterProtocol? { get set }
     
     func updateDogs(_ dogs: [Dog])
+    func showNetworkError()
 }
 
 protocol HomeRouterProtocol: AnyObject {
@@ -32,6 +33,7 @@ protocol HomePresenterProtocol: AnyObject {
 protocol HomeInteractorOutputProtocol: AnyObject {
     
     func updateDogs(_ dogs: [Dog])
+    func onNetworkError()
 }
 
 protocol HomeInteractorInputProtocol: AnyObject {

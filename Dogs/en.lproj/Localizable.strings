@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Dogs
+
+  Created by David Rivera on 16/11/21.
+  
+*/
+
+
+"DogViewCell.label.age" = "Almost %d years";
+
+"HomeView.label.title" = "Dogs We Love";
+"HomeView.networkAlert.title" = "Network error";
+"HomeView.networkAlert.message" = "Make sure you have a stable Internet connection and try again";
+"HomeView.networkAlert.button" = "Retry";
